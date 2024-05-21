@@ -1,0 +1,55 @@
+15:35:25.183 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+15:35:25.533 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+15:35:45.341 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+15:35:45.341 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+15:35:45.438 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+15:35:46.114 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+15:35:46.115 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+15:36:00.674 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+15:36:30.729 [main] ERROR testCases.TC_001_AccountRegistrationTest - test failed...
+java.lang.AssertionError: expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Your Account Has Been Created!']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1501a0df3eee72541b46bbb9c3054048, findElement {using=xpath, value=//h1[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: /var/folders/xn/txvptgzs52l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59955/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1501a0df3eee72541b46bbb9c3054048]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:132) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:656) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:666) ~[testng-7.9.0.jar:7.9.0]
+	at testCases.TC_001_AccountRegistrationTest.verify_account_registration(TC_001_AccountRegistrationTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]

@@ -1,0 +1,6 @@
+15:07:10.269 [main] INFO  testCases.TC_002_LoginTest - *** Starting TC_002_LoginTest *** 
+15:07:10.275 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs...
+15:07:10.351 [main] INFO  testCases.TC_002_LoginTest - clicked on my account link
+15:07:10.660 [main] INFO  testCases.TC_002_LoginTest - clicked on login lnk under my account
+15:07:10.662 [main] INFO  testCases.TC_002_LoginTest - entering valid login credentials
+15:07:52.695 [main] ERROR testCases.TC_002_LoginTest - Login Test failed.....

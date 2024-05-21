@@ -1,0 +1,86 @@
+14:28:29.867 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:28:30.118 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:28:34.508 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+14:28:34.509 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+14:28:34.589 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+14:28:35.055 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+14:28:35.055 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+14:28:47.783 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+14:30:23.534 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:30:23.978 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:30:28.628 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+14:30:28.628 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+14:30:28.724 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+14:30:29.105 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+14:30:29.105 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+14:30:34.945 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+14:30:34.946 [main] ERROR testCases.TC_001_AccountRegistrationTest - test failed...
+14:31:54.142 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:31:54.384 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:31:58.814 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+14:31:58.815 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+14:31:58.898 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+14:32:00.037 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+14:32:00.037 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+14:32:05.572 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+14:34:08.295 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:34:08.547 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:34:12.822 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+14:34:12.823 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+14:34:12.905 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+14:34:13.322 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+14:34:13.322 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+14:34:25.445 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+14:34:55.492 [main] ERROR testCases.TC_001_AccountRegistrationTest - test failed...
+java.lang.AssertionError: expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Your Account Has Been Created!']"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2923e6f448c2953b4157fcbf0c5d4446, findElement {value=//h1[normalize-space()='Your Account Has Been Created!'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: /var/folders/xn/txvptgzs52l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60138}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60138/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2923e6f448c2953b4157fcbf0c5d4446]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:132) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:656) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.Assert.assertEquals(Assert.java:666) ~[testng-7.9.0.jar:7.9.0]
+	at testCases.TC_001_AccountRegistrationTest.verify_account_registration(TC_001_AccountRegistrationTest.java:37) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]
