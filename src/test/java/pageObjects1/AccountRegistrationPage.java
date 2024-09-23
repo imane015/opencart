@@ -1,5 +1,5 @@
 package pageObjects1;
-import java.time.Duration;
+
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountRegistrationPage extends BasePage {
-	WebDriver driver;
+	
 	
 	public AccountRegistrationPage(WebDriver driver) {
 		super(driver);
@@ -25,15 +25,24 @@ public class AccountRegistrationPage extends BasePage {
 	@FindBy(xpath="//input[@id='input-email']")
 	WebElement Email;
 	
+	@FindBy(xpath="//input[@id='input-telephone']")
+	WebElement Telefone;
+	
+			
+	
+	
 	@FindBy(xpath="//input[@id='input-password']")
 	WebElement Password;
+	
+	@FindBy(name="confirm")
+	WebElement ConfirmPassword;
 	
 	
 	
 	@FindBy(xpath="//input[@name='agree']")
 	WebElement PrivacyPolicy;
 	
-	@FindBy(xpath="//button[normalize-space()='Continue']")
+	@FindBy(xpath="//input[@value='Continue']")
 	WebElement ContinueBtn;
 	
 	@FindBy(xpath= "//h1[normalize-space()='Your Account Has Been Created!']")
@@ -50,23 +59,32 @@ public class AccountRegistrationPage extends BasePage {
 		Email.clear();
 		Email.sendKeys(email);
 	}
-	public void setPassword(String password) {
-		Password.sendKeys(password);
+	public void setTelefone(String tel) {
+		Telefone.sendKeys(tel);
 	}
+	public void setPassword(String pwd) {
+		Password.sendKeys(pwd);
+	}
+    public void setConfirmPassword(String pwd ) {
+        ConfirmPassword.sendKeys(pwd);
+    	
+    }
 	
 	
 	public void setPrivacyPolicy() {
-		new Actions(super.driver)
+		PrivacyPolicy.click();
+		
+		/*new Actions(super.driver)
         .moveToElement(PrivacyPolicy, 1, 1) 
         .click()
         .perform();
-//		PrivacyPolicy.click();
+//		PrivacyPolicy.click();*/
 
 	}
 	
-	public void setRegisterBtn() {
+	public void clickContinue() {
 		//sol1
-		//ContinueBtn.click();
+		ContinueBtn.click();
 		//sol2 
 //		ContinueBtn.submit();
 		
@@ -82,8 +100,8 @@ public class AccountRegistrationPage extends BasePage {
 		//RegisterBtn.sendKeys(Keys.RETURN);
 		
 		//Sol6  
-		WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		mywait.until(ExpectedConditions.elementToBeClickable(ContinueBtn)).click();
+		//WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//mywait.until(ExpectedConditions.elementToBeClickable(ContinueBtn)).click();
 	}
 	
 	public String getConfirmationMsg() {

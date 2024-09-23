@@ -4,7 +4,7 @@
 <suite name="Suite" thread-count="5" parallel= "tests">
   
   <test thread-count="5" name="chromeTest">
-    <parameter name="os" value="unix"/>
+    <parameter name="os" value="macOs ventura"/>
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testCases.TC_001_AccountRegistrationTest"/>
@@ -13,7 +13,7 @@
   
   
   <test thread-count="5" name="edgeTest">
-    <parameter name="os" value="unix"/>
+    <parameter name="os" value="macOs ventura"/>
     <parameter name="browser" value="edge"/>
     <classes>
       <class name="testCases.TC_001_AccountRegistrationTest"/>

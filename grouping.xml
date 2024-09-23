@@ -3,14 +3,14 @@
 
 <suite name="Suite">
   <listeners>
-	  <listener class-name="Utilities.ExtentReportManager"></listener>
+	  <listener class-name="utilities.ExtentReportManager"></listener>
   </listeners>
   
   
   
   <test thread-count="5" name="test">
     
-    <parameter name="os" value="unix"/>
+    <parameter name="os" value="macOs ventura"/>
     <parameter name="browser" value="chrome"/>
     <groups>
 		<run>

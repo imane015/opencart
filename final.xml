@@ -6,7 +6,7 @@
 		<run>
 			<include name="sanity" /> 
 			<include name="regression" />
-			<!--<include name="master" /> -->
+			<include name="master" /> 
 			<!-- <exclude name="" /> -->
 		</run>
 	</groups>
@@ -18,7 +18,7 @@
   
   <test thread-count="5" name="Test">
   
-  	<parameter name="os" value="ventura" />
+  	<parameter name="os" value="macOs" />
   	<parameter name="browser"  value="chrome"/>  
        
     <classes>

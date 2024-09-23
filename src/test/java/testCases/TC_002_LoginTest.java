@@ -16,6 +16,8 @@ public class TC_002_LoginTest extends BaseClass{
 		logger.info("*** Starting TC_002_LoginTest *** ");
 		logger.debug("capturing application debug logs...");
 		
+		try
+		{
 		HomePage hp= new HomePage(driver);
 		hp.clickMyAccount();
 		logger.info("clicked on my account link");
@@ -28,8 +30,8 @@ public class TC_002_LoginTest extends BaseClass{
 		lp.setPassword(p.getProperty("password"));
 		lp.clickLogin();
 		
-		MyAccountPage map= new MyAccountPage(driver);
-		boolean targetPage = map.isMyAccountPageExists();
+		MyAccountPage maccp= new MyAccountPage(driver);
+		boolean targetPage = maccp.isMyAccountPageExists();
 		if(targetPage==true) {
 			logger.info("Login test passed.....");
 			Assert.assertTrue(true);
@@ -37,8 +39,16 @@ public class TC_002_LoginTest extends BaseClass{
 		else {
 			logger.error("Login Test failed.....");
 			Assert.fail();
+		}}
+		catch(Exception e)
+		{
+			Assert.fail();
 		}
+		logger.info("***** Finishes TC_002_LoginTest *******");
 		
-	}
+		
+	
+		
+	
 
-}
+}}

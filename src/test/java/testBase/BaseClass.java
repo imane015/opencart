@@ -30,13 +30,13 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	
-	static public WebDriver driver;
+	public static WebDriver driver;
 	public Logger logger;
 	public Properties p;
 	
 	@BeforeClass(groups= {"sanity","regression", "master"})
-	@Parameters({"os", "browser"})
-	public void setup(String os, String br) throws IOException {
+	@Parameters({"os" ,"browser"})
+	public void setup( String os, String br) throws IOException {
 		
 		//loading properties file
 		FileReader file = new FileReader(".//src/test/resources/config.properties");
@@ -95,9 +95,9 @@ public class BaseClass {
 		driver.get(p.getProperty("appURL"));
 		driver.manage().window().maximize();
 		
-;	}
+	}}
 	
-	@AfterClass(groups= {"sanity", "regression"})
+	@AfterClass(groups= {"sanity", "regression", "master"})
 	public void teardown() {
 		  driver.close();
 		

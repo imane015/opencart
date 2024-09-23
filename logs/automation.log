@@ -1,6 +1,49 @@
-15:07:10.269 [main] INFO  testCases.TC_002_LoginTest - *** Starting TC_002_LoginTest *** 
-15:07:10.275 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs...
-15:07:10.351 [main] INFO  testCases.TC_002_LoginTest - clicked on my account link
-15:07:10.660 [main] INFO  testCases.TC_002_LoginTest - clicked on login lnk under my account
-15:07:10.662 [main] INFO  testCases.TC_002_LoginTest - entering valid login credentials
-15:07:52.695 [main] ERROR testCases.TC_002_LoginTest - Login Test failed.....
+17:19:56.997 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+17:20:16.039 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+17:20:16.039 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+17:20:16.166 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+17:20:16.897 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+17:20:16.897 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+17:20:19.062 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+17:20:19.109 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***finished TC_001_AccountRegistrationTest***
+17:20:24.564 [main] INFO  testCases.TC_002_LoginTest - *** Starting TC_002_LoginTest *** 
+17:20:24.565 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs...
+17:20:24.681 [main] INFO  testCases.TC_002_LoginTest - clicked on my account link
+17:20:25.204 [main] INFO  testCases.TC_002_LoginTest - clicked on login lnk under my account
+17:20:25.210 [main] INFO  testCases.TC_002_LoginTest - entering valid login credentials
+18:44:17.713 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+18:44:17.992 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:08:25.416 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml"
+14:08:59.656 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml"
+14:09:48.204 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml"
+14:09:48.744 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml
+
+14:20:27.237 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml"
+14:20:27.510 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/grouping.xml
+
+14:21:29.578 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:21:29.823 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+14:22:06.478 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/bentebbaafamily/eclipse-workspace/opencart/master.xml"
+14:22:06.751 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/bentebbaafamily/eclipse-workspace/opencart/master.xml
+
+12:59:17.195 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***starting TC_001_AccountRegistrationTest***
+12:59:17.198 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+12:59:17.289 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on MyAccount
+12:59:17.976 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on Register
+12:59:17.976 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering costumer details
+12:59:20.010 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue...
+12:59:20.052 [main] INFO  testCases.TC_001_AccountRegistrationTest - ***finished TC_001_AccountRegistrationTest***
+12:59:24.977 [main] INFO  testCases.TC_002_LoginTest - *** Starting TC_002_LoginTest *** 
+12:59:24.978 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs...
+12:59:25.046 [main] INFO  testCases.TC_002_LoginTest - clicked on my account link
+12:59:25.498 [main] INFO  testCases.TC_002_LoginTest - clicked on login lnk under my account
+12:59:25.506 [main] INFO  testCases.TC_002_LoginTest - entering valid login credentials

@@ -20,18 +20,22 @@ public class TC_001_AccountRegistrationTest extends BaseClass {
 			HomePage hp = new HomePage(driver);
 			hp.clickMyAccount();
 			logger.info("clicked on MyAccount");
+			
 			hp.clickRegister();
 			logger.info("clicked on Register");
+			
 			logger.info("Entering costumer details");
-			
-			
-			AccountRegistrationPage regpage = new AccountRegistrationPage(driver);
+		    AccountRegistrationPage regpage = new AccountRegistrationPage(driver);
 			regpage.setFirstname(randomeString().toUpperCase());
             regpage.setLastname(randomeString().toUpperCase());
             regpage.setEmail(randomeString() + "@gmail.com");
-			regpage.setPassword(randomeAlphaNumeric());
+			regpage.setTelefone(randomeNumber());
+			String password= randomeAlphaNumeric();
+			
+			regpage.setPassword(password);
+			regpage.setConfirmPassword(password);
 			regpage.setPrivacyPolicy();
-			regpage.setRegisterBtn();
+			regpage.clickContinue();
 			logger.info("clicked on continue...");
 			
 
@@ -39,6 +43,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass {
 			Assert.assertEquals(confmsg, "Your Account Has Been Created!");
 		} catch (AssertionError|Exception e) {
 			logger.error("test failed...", e);
+			logger.debug("Debug logs.....");
 			Assert.fail();
 		}
 

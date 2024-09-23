@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 	
+	//DataProviders 1
 	
 	@DataProvider(name="LoginData")
 	public String [][] getData() throws IOException

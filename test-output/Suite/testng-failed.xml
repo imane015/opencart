@@ -4,13 +4,15 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="os" value="ventura"/>
+  <test thread-count="5" name="test(failed)">
+    <parameter name="os" value="macOs ventura"/>
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="sanity"/>
         <include name="regression"/>
+        <include name="master"/>
+        <exclude name=""/>
       </run>
     </groups>
     <classes>
@@ -29,5 +31,5 @@
         </methods>
       </class> <!-- testCases.TC_001_AccountRegistrationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
